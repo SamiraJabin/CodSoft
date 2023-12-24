@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #01796F;
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        
+
+        #container {
+            padding: 20px;
+            display: flex;
+
+            flex-direction: column;
+        }
+
+        .custom-box {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .custom-box img {
+            
+            margin-top: 80px;
+            margin-bottom: 4rem;
+            height: 200px;
+            width: 200px;
+            display: grid;
+            gap: 30rem;
+            grid-template-columns: repeat(2,1fr);
+
+
+        }
+
+        
+
+        .title {
+            font-size: 64px;
+            color: darkcyan;
+            font-weight: bold;
+            margin: 40px 0;
+        }
+        .navbar{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(45, 100, 100);
+            color: #fff;    
+            width: 100%;        
+            position: sticky;
+        }
+        .navbar ul{
+            display: flex;
+            list-style: none;
+            margin: 20px 0px;
+            margin-inline-start: 150px;
+        }
+        .navbar ul li{
+            
+            font-size: 1.1 rem;
+            font-weight: bold;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            color: white;
+            
+
+            padding: 8px 25px ;
+           
+            transition: all .5 ease;
+        }
+        span{
+            font-family: "Audiowide", sans-serif;
+            margin-left: -300px;
+            font-size: 30px;
+            
+        }
+        footer {
+            background-color: rgb(45, 100, 100);
+            color: white;
+            
+            width: 100%;
+          }
+          
+          .foot {
+            display: flex;
+            margin-left: 40%;
+            
+          }
+          #project-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .project {
+            width: 300px;
+            margin: 20px;
+            background-color: rgb(162, 199, 162);
+
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            
+        }
+        p{
+            color: rgb(10, 9, 9);
+            padding-left: 3px;
+        }
+        
+        .project:hover {
+            transform: scale(1.05);
+        }
+        
+        .project img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .project h2 {
+            text-align: center;
+            margin: 10px 0;
+            color: white;
+        }
+        
+        
+          
+          
+          
+        @media screen and (max-width:900px) {
+            .custom-box {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .title {
+                font-size: 40px;
+            }
+
+        }
+       
+        @media screen and (max-width:900px) {
+            .navbar{
+              display: block;
+             
+                align-items: center;
+                text-align: center;
+                
+            }
+            
+        }
+        @media screen and (max-width:900px) {
+            header{
+              float: left;
+                align-items: center;
+                text-align: center;
+                
+            }
+            footer{
+                text-align: center;
+            }
+            
+        }
+            
+        
+
+        .proj{
+            margin-top: 20px;
+            margin-bottom: 0px;
+            padding-top: 10px;
+            color: rgb(45, 100, 100);
+            
+            text-align: center;
+            background-color: #fff;
+            width: 100%;
+           
+        }
+        section {
+            padding: 20px;
+        }
+
+        .service {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .service img {
+            max-width: 100%;
+            height: 200px;
+            width: 200px;
+        }
+        .servicesssss{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding-top: 10px;
+            color: rgb(45, 100, 100);
+            
+            text-align: center;
+            background-color: #fff;
+            width: 100%;
+        }
+
+        .service h3 {
+            color: #333;
+        }
+
+        .service p {
+            color: #fffbfb;
+        }
+    
+    .fa{
+      color: white;
+    }
+    .landing{
+        
+        height: 42px;
+        width: 110px;
+        background-color:white ;
+        border: rgb(45, 100, 100);
+        align-items: center;
+        
+      }
+    .landing a{
+        text-decoration: none;
+        color: rgb(45, 100, 100);
+        font-size: 19px;
+        font-family: 'Times New Roman', Times, serif;  
+    }
+    .landing:hover{
+        box-shadow: 0 0 10px white;
+        
+        color: rgb(45, 100, 100);
+      }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+             <nav class="navbar">
+        <span>DECOR</span>
+            <ul>
+               
+                <li><a href="#id">About</a></li>
+            <li><a href="#project-container">Projects</a></li>
+            <li><a href="#serv">Services</a></li>
+            <li><a href="#footer">Contact</a></li>
+            </ul>
+            
+           </nav>
+        </div>
+       
+    
+        <div id="container">
+            <div class="custom-box">
+                <div class="text-container">
+                    <p style="font-size: 24px; color: #fff; font-weight: 500; margin-top: 10px; margin-bottom: 4px;">
+                        Home Designing.
+                    </p>
+                    <h1 class="title" style="color: #fff;">Let your Home be unique.</h1>
+                    <p style="font-size: 24px; color: #fff; margin: 4px 0;">
+                        Decoration is the furnishing or adorning of a space with decorative elements,
+                        sometimes complemented by advice and practical assistance.
+                    </p>
+                </div>
+                <div>
+                    <img src="Assests/drk.jpg" alt="heroImg" class="hero-img">
+                </div>
+                <div>
+                    <img src="Assests/image2.jpg" alt="image" class="image">
+                </div>
+                <div>
+                    <img src="Assests/images.jpg" alt="drk" class="drk-img">
+                </div>
+                <div>
+                    <img src="Assests/photo.jpg" alt="imgg" class="imgg">
+                </div>
+            </div>
+            <div>   
+                 <button class="landing"><a href="calculator.html">Next Page</a></button>
+            </div>
+        </div>
+
+
+        
+
+        <section id="project-container">
+            <h1 class="proj">Project Works</h1>
+            <article class="project">
+                <img src="Assests/proj2.jpeg" alt="Project 1">
+                <h2>Space Planning</h2>
+                <p>Analyze the available space and its layout.
+                    Create a functional floor plan that optimizes the use of space and addresses the client's needs.
+                    </p>
+            </article> 
+            <article class="project">
+                <img src="Assests/proj3.jpg" alt="Project 2">
+                <h2> Cost Estimation</h2>
+                <p>Prepare a budget that includes costs for materials, labor, and any other project-related expenses.
+                    Provide the client with a cost estimate and seek approval before proceeding.</p>
+            </article>
+    
+            <article class="project">
+                <img src="Assests/proj1.jpg" alt="Project 2">
+                <h2>Design Development</h2>
+                <p>Create detailed drawings and 3D models to illustrate the proposed design.
+                    Select materials, finishes, and furnishings that enhance the overall design concept.
+                    .</p>
+            </article>
+    
+           
+    
+        </section>
+        
+
+        <section id="serv">
+            <h1 class="servicesssss">Our Services</h1>
+            <div class="service">
+                <img src="Assests/serv1.webp" alt="Living Room Design">
+                <h3>Living Room Design</h3>
+                <p>Harmoniously blend functionality and aesthetics to create a captivating and comfortable living space that reflects the inhabitants' lifestyle and personality.p>
+            </div>
+    
+            <div class="service">
+                <img src="Assests/serv2.jpg" alt="Kitchen Design">
+                <h3>Kitchen Design</h3>
+                <p>Harmonizing functionality with aesthetics, kitchen design in interior designing seamlessly integrates practicality and style to create a cohesive and visually pleasing culinary space.</p>
+          </div>
+    
+            <div class="service">
+                <img src="Assests/serv3.jpg" alt="Bedroom Design">
+                <h3>Outdoor Design</h3>
+                <p>Harmonizing natural elements and spatial functionality to create captivating and functional outdoor extensions within interior design</p>
+            </div>
+        </section>
+    
+        
+    
+        <footer id="footer">
+
+            <div class="foot">
+                <div>
+                  <ul class="h1"><h3>Pages</h3>
+                    <li>Our Projects</li>
+                    <li>Our Team</li>
+                    <li>Contact Us</li>
+                  </ul>
+                </div>
+                <div>
+                  <ul class="h1"><h3>Services</h3>
+                    <li>Living Area</li>
+                    <li>Dining Hall</li>
+                    <li>Bedroom</li>
+                  </ul>
+                </div>
+                <div>
+                     <ul class="h1 cont"><h3>Contact</h3>
+                  <li>  <a href="https://www.facebook.com/login/"><i class="fa fa-facebook-f" style="font-size:24px" ></i></a>
+                  </li>
+                  <li><a href="https://www.linkedin.com/in/samira-jabin-192282276"> <i class="fa fa-linkedin-square" style="font-size:24px"></i></a>
+                  </li>
+                  <li> <a href="https://github.com/SamiraJabin"><i class="fa fa-github" style="font-size:24px"></i></a>
+                  </li>
+                </ul>
+                </div>
+               
+              </div>
+             
+        </footer>
+    </header>
+</body>
+</html>
